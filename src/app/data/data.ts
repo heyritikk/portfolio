@@ -189,15 +189,58 @@ export const education = {
 // ──────────────────────────────────────────────
 export const experiences = [
   {
-    companyName: "Tech Company Inc.", // TODO: Replace with your company name
-    title: "Software Developer", // TODO: Replace with your job title
-    duration: "2024 - Present", // TODO: Replace with your duration
-    location: "Remote", // TODO: Replace with your work location
+    companyName: "Cognizant",
+    title: "Program Analyst Trainee",
+    duration: "Dec 2025 - Present",
+    location: "Chennai, Tamil Nadu, India · On-site",
     points: [
-      "Developed and maintained web applications using React and Node.js.", // TODO: Replace with your experience points
-      "Collaborated with cross-functional teams to deliver features on time.",
-      "Implemented responsive designs and optimized application performance.",
-      "Participated in code reviews and contributed to best practices.",
+      "Working as a Program Analyst Trainee at one of the world's leading IT services companies.",
+      "Developing solutions using C# and SQL in a fast-paced enterprise environment.",
+      "Collaborating with cross-functional teams on software development and business analysis tasks.",
+    ],
+  },
+  {
+    companyName: "Nyra AI",
+    title: "Growth and Marketing Intern",
+    duration: "Jun 2025 - Nov 2025",
+    location: "Bengaluru, Karnataka, India · Remote",
+    points: [
+      "Drove growth strategies for Nyra AI, a next-generation AI-powered marketing engine for early-stage founders.",
+      "Designed and executed marketing campaigns to expand user acquisition and brand awareness.",
+      "Collaborated with the product team to align marketing efforts with platform capabilities.",
+    ],
+  },
+  {
+    companyName: "Insight Genesis - IGAi",
+    title: "Digital Marketing and Community Manager",
+    duration: "Apr 2025 - Nov 2025",
+    location: "Singapore · Remote",
+    points: [
+      "Managed digital marketing and community initiatives for Insight Genesis, an AI platform built on Decentralized Personal Insight (DPI).",
+      "Grew and engaged a global Web3 and AI community across multiple online platforms.",
+      "Developed content strategies to communicate complex AI concepts to a broad audience.",
+    ],
+  },
+  {
+    companyName: "UCTalent",
+    title: "QA/QC & Community Manager",
+    duration: "Dec 2024 - Apr 2025",
+    location: "Vietnam · Remote",
+    points: [
+      "Conducted quality assurance and quality control for an on-chain referral recruitment platform connecting blockchain and Web3 talents.",
+      "Managed community operations and engagement for a reward-driven Web3 talent network.",
+      "Tested smart contracts and Web3 tools to ensure platform reliability and user experience.",
+    ],
+  },
+  {
+    companyName: "Association Blockchain Asia (ABA)",
+    title: "Community Manager",
+    duration: "Nov 2024 - May 2025",
+    location: "Singapore · Remote",
+    points: [
+      "Managed community growth and engagement for the Association Blockchain Asia, supporting blockchain adoption across industries in Asia.",
+      "Organized online events and initiatives to foster collaboration among blockchain professionals.",
+      "Led community marketing efforts and maintained active communication across social channels.",
     ],
   },
 ];

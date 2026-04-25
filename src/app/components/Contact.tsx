@@ -114,15 +114,14 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
       <div className="w-full sm:max-w-2xl md:max-w-[54rem] border border-[var(--border)] p-4 md:p-8 rounded-2xl shadow-md">
         <div className="flex max-md:flex-col gap-4">
           <motion.a
-            href="mailto:yourname@email.com" // TODO: Replace with your email address
+            href="mailto:theritik43700@gmail.com"
             className="flex flex-1 items-center md:hover:bg-[var(--surface-hover)] text-base md:text-lg justify-center gap-2 py-3 border border-[var(--border)] rounded-lg "
             variants={rotateYVariant}
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
           >
-            <FiMail className="text-base md:text-lg" /> yourname@email.com{" "}
-            {/* TODO: Replace with your email */}
+            <FiMail className="text-base md:text-lg" /> theritik43700@gmail.com{" "}
           </motion.a>
         </div>
 
