@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "motion/react";
 import { fadeInRight } from "../data/variants";
-import { IoCodeDownloadOutline } from "react-icons/io5";
 import { FiInstagram } from "react-icons/fi";
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
@@ -14,13 +13,21 @@ const Footer = () => {
       viewport={{ once: true }}
       className="bg-[var(--background)] border-t border-[var(--border)] text-[var(--foreground)]"
     >
+      <div className="max-w-6xl mx-auto px-6 pt-6 pb-5">
+        <a href="#home" className="inline-flex items-center">
+          <span className="text-xs uppercase tracking-[0.35em] font-semibold text-[var(--foreground)]">
+            RITIK KUMAR
+          </span>
+        </a>
+      </div>
+
       <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
         <div className="space-y-5">
           <a
-            href="/resume.pdf" // TODO: Replace with your actual resume file path
+            href="/resume.pdf" // TODO: Replace with your actual downloadable file URL
             className="text-base hover:underline"
           >
-            Download Resume
+            Download the KAWA Analytics Python Library
           </a>
 
           <div className="space-y-3 max-w-md">
@@ -75,31 +82,11 @@ const Footer = () => {
             <ul className="text-base space-y-1 text-[var(--muted-foreground)]">
               <li><a href="#home" className="hover:text-[var(--foreground)]">Home</a></li>
               <li><a href="#about" className="hover:text-[var(--foreground)]">About</a></li>
-              <li><a href="#projects" className="hover:text-[var(--foreground)]">Projects</a></li>
               <li><a href="#contact" className="hover:text-[var(--foreground)]">Contact</a></li>
+              <li><a href="#" className="hover:text-[var(--foreground)]">Careers</a></li>
+              <li><a href="#" className="hover:text-[var(--foreground)]">Security</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-
-      <div className="border-t border-[var(--border)]">
-        <div className="max-w-6xl mx-auto px-6 py-5 flex max-md:flex-col gap-3 items-center justify-between text-base">
-          <p>
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.{" "}
-            {/* TODO: Replace with your name */}
-          </p>
-          <a
-            href="https://github.com/yourusername" // TODO: Replace with your GitHub repo URL or any link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center px-2 py-1 gap-1 hover:underline rounded-md transition"
-          >
-            <IoCodeDownloadOutline
-              strokeWidth={2}
-              className="size-5 md:size-[22px]"
-            />
-            Source Code
-          </a>
         </div>
       </div>
     </motion.footer>

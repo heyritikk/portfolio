@@ -40,8 +40,7 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         viewport={{ once: true, amount: 0.2 }}
         className="text-2xl md:text-3xl leading-8 md:leading-10 w-full sm:max-w-3xl px-4 max-[370px]:px-10 md:max-w-4xl text-[var(--muted)]"
       >
-        Hey, I&apos;m John Doe, a Full Stack Developer{" "}
-        {/* TODO: Replace "John Doe" with your name and "Full Stack Developer" with your title */}
+        Hey, I&apos;m Ritik Kumar, .NET Full Stack Developer
       </motion.p>
       <motion.div
         initial="hidden"

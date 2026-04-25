@@ -170,7 +170,7 @@ export const personalInfo = {
   alt: "Profile Pic",
   summary:
     "I'm a passionate developer who loves building web applications. I enjoy solving complex problems and creating user-friendly experiences. Always eager to learn new technologies and contribute to exciting projects.", // TODO: Write your own summary
-  location: "New York, USA", // TODO: Replace with your location
+  location: "Chennai, India", // TODO: Replace with your location
 };
 // ──────────────────────────────────────────────
 // EDUCATION — Your academic background.
