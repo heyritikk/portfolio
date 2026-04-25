@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { fadeInRight } from "../data/variants";
-import { FiInstagram } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <span className="text-base">Social Media</span>
             <a
-              href="https://x.com/yourusername" // TODO: Replace with your X profile URL
+              href="https://x.com/rittik_kumarr"
               target="_blank"
               rel="noopener noreferrer"
               className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
@@ -60,15 +60,15 @@ const Footer = () => {
               <FaXTwitter className="size-4" />
             </a>
             <a
-              href="https://instagram.com/yourusername" // TODO: Replace with your Instagram URL
+              href="https://github.com/heyritikk/"
               target="_blank"
               rel="noopener noreferrer"
               className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
             >
-              <FiInstagram className="size-4" />
+              <FaGithub className="size-4" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername" // TODO: Replace with your LinkedIn URL
+              href="https://www.linkedin.com/in/ritik-kumar13/"
               target="_blank"
               rel="noopener noreferrer"
               className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"

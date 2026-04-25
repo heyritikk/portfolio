@@ -52,7 +52,7 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         <motion.a
           className="px-8 flex group items-center justify-center gap-2 py-3 rounded-full border border-[var(--border)] text-lg md:text-xl cursor-pointer"
           whileHover="hover"
-          href="https://www.linkedin.com/in/yourprofile/" // TODO: Replace with your LinkedIn URL (or any connect link)
+          href="https://www.linkedin.com/in/ritik-kumar13/"
           target="_blank"
           rel="noopener noreferrer"
           variants={{

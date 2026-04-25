@@ -75,14 +75,14 @@ export const navbarData: NavbarItem[] = [
     name: "LinkedIn",
     type: "link",
     icon: FaLinkedinIn,
-    url: "https://www.linkedin.com/in/yourprofile/", // TODO: Replace with your LinkedIn URL
+    url: "https://www.linkedin.com/in/ritik-kumar13/",
     size: "18px",
   },
   {
     name: "Github",
     type: "link",
     icon: IoLogoGithub,
-    url: "https://github.com/yourusername", // TODO: Replace with your GitHub URL
+    url: "https://github.com/heyritikk/",
     size: "18px",
   },
 ];
@@ -166,7 +166,7 @@ export const projects = [
 // - location: Your city/country
 // ──────────────────────────────────────────────
 export const personalInfo = {
-  pfp: "/img/profilepic.webp", // TODO: Replace with your profile picture path
+  pfp: "/img/profilepic.png", // TODO: Replace with your profile picture path
   alt: "Profile Pic",
   summary:
     "I'm a passionate developer who loves building web applications. I enjoy solving complex problems and creating user-friendly experiences. Always eager to learn new technologies and contribute to exciting projects.", // TODO: Write your own summary
@@ -176,10 +176,10 @@ export const personalInfo = {
 // EDUCATION — Your academic background.
 // ──────────────────────────────────────────────
 export const education = {
-  college: "Your University Name", // TODO: Replace with your university
+  college: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute", // TODO: Replace with your university
   course: "Bachelor of Technology in Computer Science", // TODO: Replace with your degree
-  cgpa: "8.5", // TODO: Replace with your CGPA/GPA
-  duration: "2020 - 2024", // TODO: Replace with your duration
+  cgpa: "8.7", // TODO: Replace with your CGPA/GPA
+  duration: "2021 - 2025", // TODO: Replace with your duration
 };
 // ──────────────────────────────────────────────
 // EXPERIENCE — Your work history.

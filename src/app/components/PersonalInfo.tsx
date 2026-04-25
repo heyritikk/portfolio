@@ -14,14 +14,16 @@ const PersonalInfo = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Image
-          src={personalInfo.pfp}
-          alt="Profile Picture" // TODO: You can update this alt text with your name
-          className="border border-[var(--border)] rounded-full"
-          width={190}
-          height={190}
-          sizes="190px"
-        />
+        <div className="rounded-full overflow-hidden border border-[var(--border)]" style={{width: 178, height: 178}}>
+          <Image
+            src={personalInfo.pfp}
+            alt="Profile Picture"
+            className="object-cover object-top scale-125"
+            width={178}
+            height={178}
+            sizes="178px"
+          />
+        </div>
       </motion.div>
       <motion.p
         variants={fadeInUpRight}
