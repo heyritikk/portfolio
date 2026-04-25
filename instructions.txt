@@ -1,0 +1,336 @@
+================================================================================
+  PORTFOLIO TEMPLATE — SETUP INSTRUCTIONS
+================================================================================
+
+  A modern, animated developer portfolio built with Next.js, Tailwind CSS,
+  and Framer Motion. Customize it with your own data and deploy in minutes.
+
+================================================================================
+
+TABLE OF CONTENTS
+─────────────────
+  1. Prerequisites
+  2. Getting Started
+  3. Personalizing Your Portfolio
+     3a. Edit Your Data (data.ts)
+     3b. Update Images
+     3c. Update Metadata & SEO (layout.tsx)
+     3d. Update Hero Section (Hero.tsx)
+     3e. Update Contact Section (Contact.tsx)
+     3f. Update Footer (Footer.tsx)
+     3g. Update SEO Files (robots.ts & sitemap.ts)
+  4. Setting Up the Contact Form (Web3Forms)
+  5. Environment Variables
+  6. Running the Project
+  7. Deploying to Vercel
+  8. File Structure Overview
+
+
+================================================================================
+1. PREREQUISITES
+================================================================================
+
+  Make sure you have these installed on your system:
+
+  • Node.js (v18 or later) — https://nodejs.org/
+  • npm (comes with Node.js) or yarn/pnpm
+  • A code editor (VS Code recommended)
+  • A GitHub account (for deployment)
+
+
+================================================================================
+2. GETTING STARTED
+================================================================================
+
+  Step 1: Open a terminal and navigate to this project folder.
+
+  Step 2: Install dependencies:
+          npm install
+
+  Step 3: Start the development server:
+          npm run dev
+
+  Step 4: Open http://localhost:3000 in your browser to see the template.
+
+  You should see the portfolio with demo data. Now follow the steps below
+  to replace the demo data with your own information.
+
+
+================================================================================
+3. PERSONALIZING YOUR PORTFOLIO
+================================================================================
+
+  The template is designed so that MOST of your changes only need to happen
+  in one file: src/app/data/data.ts
+
+  However, a few other files also contain placeholder text that you need to
+  update. Each placeholder is marked with a "TODO:" comment to help you
+  find them easily.
+
+  TIP: Search for "TODO:" across the entire project to find every spot
+  that needs your attention.
+
+
+────────────────────────────────────────────────────────────────────────────────
+3a. EDIT YOUR DATA — src/app/data/data.ts
+────────────────────────────────────────────────────────────────────────────────
+
+  This is the main file where you configure your portfolio content.
+  It has clearly commented sections:
+
+  • SKILLS — Add or remove technologies from your tech stack.
+    Each skill needs a name, an icon (from react-icons), and a hex color.
+    Browse icons at: https://react-icons.github.io/react-icons/
+
+  • NAVBAR — Update your LinkedIn and GitHub URLs.
+    The scroll links (Home, About, Projects, Contact) work automatically.
+
+  • PROJECTS — Add your own projects (recommended: 2–4 projects).
+    For each project, provide:
+      - name: Project title
+      - description: One-line summary
+      - points: 2–4 bullet points about the project
+      - techStack: Technologies used (with icon and color)
+      - liveLink: URL of the deployed project (or "#" if not deployed)
+      - githubLink: URL of the GitHub repo (or "#" if private)
+      - image: Path to the screenshot (e.g., "/img/project1.png")
+              Place your screenshots in the /public/img/ folder.
+
+  • PERSONAL INFO — Your profile picture path, bio summary, and location.
+    Place your profile picture in /public/img/ and update the path.
+
+  • EDUCATION — Your university, degree, CGPA, and duration.
+
+  • EXPERIENCE — Your work history. Add multiple entries if needed.
+    If you don't have work experience, set this to an empty array: []
+
+
+────────────────────────────────────────────────────────────────────────────────
+3b. UPDATE IMAGES — /public/img/
+────────────────────────────────────────────────────────────────────────────────
+
+  The template comes with these demo images:
+
+  • preview.png       — OG image shown when your site is shared on social media.
+                        Recommended size: 1200x630 pixels.
+                        Replace this with your own preview image.
+
+  • profilepic.webp   — Your profile picture shown in the About section.
+                        Replace with your own photo. A square image works best.
+
+  • projectimage.jfif — Demo project screenshot (used for all demo projects).
+                        Replace with actual screenshots of your projects.
+                        Name them however you want (e.g., project1.png, project2.png)
+                        and update the paths in data.ts.
+
+
+────────────────────────────────────────────────────────────────────────────────
+3c. UPDATE METADATA & SEO — src/app/layout.tsx
+────────────────────────────────────────────────────────────────────────────────
+
+  Open layout.tsx and update:
+
+  • Page title (shown in browser tab)
+  • Meta description (shown in search results)
+  • Keywords
+  • OpenGraph data (for social media sharing previews)
+  • Twitter card data
+  • metadataBase URL (your deployed domain)
+  • Structured data (JSON-LD) — your name, URL, job title, social links, etc.
+
+  Every placeholder is marked with a "TODO:" comment.
+
+
+────────────────────────────────────────────────────────────────────────────────
+3d. UPDATE HERO SECTION — src/app/components/Hero.tsx
+────────────────────────────────────────────────────────────────────────────────
+
+  • Replace "John Doe" with your name
+  • Replace "Full Stack Developer" with your title (if different)
+  • Update the "Let's Connect" link to point to your LinkedIn or any social link
+
+
+────────────────────────────────────────────────────────────────────────────────
+3e. UPDATE CONTACT SECTION — src/app/components/Contact.tsx
+────────────────────────────────────────────────────────────────────────────────
+
+  • Replace the demo email (yourname@email.com) with your actual email address
+    in BOTH the href="mailto:..." and the displayed text.
+
+
+────────────────────────────────────────────────────────────────────────────────
+3f. UPDATE FOOTER — src/app/components/Footer.tsx
+────────────────────────────────────────────────────────────────────────────────
+
+  • Replace "Your Name" with your actual name in the copyright text.
+  • Update the "Source Code" link to point to your GitHub repo (or remove it).
+
+
+────────────────────────────────────────────────────────────────────────────────
+3g. UPDATE SEO FILES — src/app/robots.ts & src/app/sitemap.ts
+────────────────────────────────────────────────────────────────────────────────
+
+  • In both files, replace "https://www.yourdomain.com" with your
+    actual deployed website URL.
+
+
+================================================================================
+4. SETTING UP THE CONTACT FORM (Web3Forms)
+================================================================================
+
+  The contact form uses Web3Forms (https://web3forms.com/) to send messages
+  directly to your email — no backend server needed!
+
+  Here's how to set it up:
+
+  Step 1: Go to https://web3forms.com/
+
+  Step 2: Enter your email address and click "Create Access Key".
+
+  Step 3: Check your email inbox for a verification email from Web3Forms.
+          Click the link to verify.
+
+  Step 4: You will receive an Access Key (a long string like:
+          "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx").
+
+  Step 5: Create a file named ".env.local" in the ROOT of this project
+          (same level as package.json) and add:
+
+          NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_access_key_here
+
+          Replace "your_access_key_here" with the actual key from Step 4.
+
+  Step 6: Restart the dev server (stop it with Ctrl+C and run npm run dev again).
+
+  Step 7: Test the contact form — fill it out and submit.
+          You should receive the message in your email.
+
+  IMPORTANT: Never share your access key publicly or commit .env.local to Git.
+             The .gitignore file already excludes .env.local by default.
+
+
+================================================================================
+5. ENVIRONMENT VARIABLES
+================================================================================
+
+  Create a ".env.local" file in the project root with:
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key_here    │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  This is the only environment variable needed.
+
+  When deploying to Vercel, add this same variable in:
+  Project Settings → Environment Variables
+
+
+================================================================================
+6. RUNNING THE PROJECT
+================================================================================
+
+  Development:
+    npm run dev           → Starts dev server at http://localhost:3000
+
+  Production Build:
+    npm run build         → Creates an optimized production build
+    npm start             → Serves the production build locally
+
+  Lint:
+    npm run lint          → Checks for code quality issues
+
+
+================================================================================
+7. DEPLOYING TO VERCEL (Recommended)
+================================================================================
+
+  Step 1: Push your code to a GitHub repository.
+
+  Step 2: Go to https://vercel.com/ and sign in with GitHub.
+
+  Step 3: Click "New Project" and import your GitHub repository.
+
+  Step 4: Vercel will auto-detect it's a Next.js project.
+          No build settings changes needed.
+
+  Step 5: Add your environment variable:
+          Go to "Environment Variables" section and add:
+            Key:   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+            Value: your_access_key_here
+
+  Step 6: Click "Deploy". Your portfolio will be live in ~1 minute!
+
+  Step 7: (Optional) Connect a custom domain:
+          Go to Project Settings → Domains → Add your domain.
+          Follow Vercel's instructions to configure DNS.
+
+  After connecting your custom domain, remember to update the URL in:
+    • layout.tsx (metadataBase, openGraph url, structured data)
+    • robots.ts (siteUrl)
+    • sitemap.ts (siteUrl)
+
+
+================================================================================
+8. FILE STRUCTURE OVERVIEW
+================================================================================
+
+  new-template/
+  ├── public/
+  │   └── img/                  ← Your images go here
+  │       ├── preview.png       ← Social media preview image (1200x630)
+  │       ├── profilepic.webp   ← Your profile picture
+  │       └── projectimage.jfif ← Demo project screenshot (replace with yours)
+  │
+  ├── src/app/
+  │   ├── data/
+  │   │   ├── data.ts           ← ⭐ MAIN FILE — Your portfolio data
+  │   │   └── variants.ts       ← Animation variants (no changes needed)
+  │   │
+  │   ├── components/
+  │   │   ├── Hero.tsx           ← Hero section (update name & link)
+  │   │   ├── AboutMe.tsx        ← About section wrapper (no changes needed)
+  │   │   ├── PersonalInfo.tsx   ← Profile card (no changes needed - reads from data.ts)
+  │   │   ├── Education.tsx      ← Education card (no changes needed - reads from data.ts)
+  │   │   ├── Experience.tsx     ← Experience card (no changes needed - reads from data.ts)
+  │   │   ├── Skills.tsx         ← Skills grid (no changes needed - reads from data.ts)
+  │   │   ├── Projects.tsx       ← Projects section (no changes needed - reads from data.ts)
+  │   │   ├── Contact.tsx        ← Contact form (update email)
+  │   │   ├── Footer.tsx         ← Footer (update name & link)
+  │   │   ├── Header.tsx         ← Navigation bar (no changes needed - reads from data.ts)
+  │   │   ├── Home.tsx           ← Main page layout (no changes needed)
+  │   │   └── ThemeToggle.tsx    ← Dark/Light mode toggle (no changes needed)
+  │   │
+  │   ├── layout.tsx             ← SEO metadata & structured data (update)
+  │   ├── page.tsx               ← Entry point (no changes needed)
+  │   ├── globals.css            ← Global styles (no changes needed)
+  │   ├── robots.ts              ← Robots.txt config (update URL)
+  │   ├── sitemap.ts             ← Sitemap config (update URL)
+  │   ├── error.tsx              ← Error page (no changes needed)
+  │   └── not-found.tsx          ← 404 page (no changes needed)
+  │
+  ├── .env.local                 ← ⭐ CREATE THIS — Environment variables
+  ├── package.json               ← Dependencies
+  ├── next.config.ts             ← Next.js config (no changes needed)
+  ├── tsconfig.json              ← TypeScript config (no changes needed)
+  └── instructions.txt           ← This file!
+
+
+================================================================================
+  QUICK START CHECKLIST
+================================================================================
+
+  [ ] npm install
+  [ ] Edit src/app/data/data.ts with your info
+  [ ] Replace images in /public/img/
+  [ ] Update Hero.tsx (name, connect link)
+  [ ] Update Contact.tsx (email)
+  [ ] Update Footer.tsx (name, link)
+  [ ] Update layout.tsx (metadata, structured data)
+  [ ] Update robots.ts & sitemap.ts (your domain URL)
+  [ ] Create .env.local with Web3Forms access key
+  [ ] npm run dev → test locally
+  [ ] Deploy to Vercel
+
+================================================================================
+  Happy building! 🚀
+================================================================================
