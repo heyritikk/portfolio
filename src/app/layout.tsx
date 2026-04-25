@@ -25,13 +25,13 @@ const instrumentSerif = Instrument_Serif({
 // ============================================================
 
 const description =
-  "Your Name — Full Stack Developer portfolio showcasing projects, web applications, and software engineering experience."; // TODO: Replace with your description
+  "Ritik Kumar — Full Stack Developer portfolio showcasing projects, web applications, and software engineering experience.";
 
 export const metadata: Metadata = {
-  title: "Your Name - Full Stack Developer", // TODO: Replace with your name and title
+  title: "Ritik Kumar - Full Stack Developer",
   description,
   keywords: [
-    "Your Name", // TODO: Replace with your name
+    "Ritik Kumar",
     "Full Stack Developer",
     "React",
     "Next.js",
@@ -39,23 +39,23 @@ export const metadata: Metadata = {
     "Web Developer",
   ],
   openGraph: {
-    title: "Your Name - Full Stack Developer", // TODO: Replace with your name
+    title: "Ritik Kumar - Full Stack Developer",
     description,
     url: "https://www.yourdomain.com", // TODO: Replace with your domain
-    siteName: "Your Name Portfolio", // TODO: Replace with your name
+    siteName: "Ritik Kumar Portfolio",
     images: [
       {
         url: "/img/preview.png", // TODO: Replace with your OG preview image (1200x630px recommended)
         width: 1200,
         height: 630,
-        alt: "Your Name Portfolio", // TODO: Replace with your name
+        alt: "Ritik Kumar Portfolio",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name - Full Stack Developer", // TODO: Replace with your name
+    title: "Ritik Kumar - Full Stack Developer",
     description,
     images: ["/img/preview.png"],
   },
@@ -95,7 +95,7 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
-                name: "Your Name", // TODO: Replace with your name
+                name: "Ritik Kumar",
                 url: "https://www.yourdomain.com", // TODO: Replace with your domain
                 jobTitle: "Full Stack Developer", // TODO: Replace with your job title
                 image: "https://www.yourdomain.com/img/profilepic.webp", // TODO: Replace with your domain + profile pic path
@@ -110,9 +110,9 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                name: "Your Name Portfolio", // TODO: Replace with your name
+                name: "Ritik Kumar Portfolio",
                 url: "https://www.yourdomain.com", // TODO: Replace with your domain
-                description: "Portfolio of Your Name, Full Stack Developer.", // TODO: Replace with your name
+                description: "Portfolio of Ritik Kumar, Full Stack Developer.",
               },
               {
                 "@context": "https://schema.org",
