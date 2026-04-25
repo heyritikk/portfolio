@@ -97,7 +97,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         initial="initial"
         whileInView="whileInView"
         viewport={{ once: true }}
-        className="text-xs text-center text-[var(--muted)] dark:text-gray-200 font-medium"
+        className="text-sm md:text-base text-center text-[var(--muted)] dark:text-gray-200 font-medium"
       >
         GET IN TOUCH
       </motion.p>
@@ -106,7 +106,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="text-4xl md:text-6xl [font-family:var(--font-instrument-serif)] pt-2 sm:pt-4 px-4 mb-6 md:mb-10"
+        className="text-5xl md:text-7xl [font-family:var(--font-instrument-serif)] pt-2 sm:pt-4 px-4 mb-7 md:mb-12"
       >
         Let&apos;s{" "}
         <span className="animated-text-gradient italic">Connect</span>
@@ -115,13 +115,13 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         <div className="flex max-md:flex-col gap-4">
           <motion.a
             href="mailto:yourname@email.com" // TODO: Replace with your email address
-            className="flex flex-1 items-center md:hover:bg-[var(--surface-hover)] text-sm justify-center gap-1 py-2 border border-[var(--border)] rounded-lg "
+            className="flex flex-1 items-center md:hover:bg-[var(--surface-hover)] text-base md:text-lg justify-center gap-2 py-3 border border-[var(--border)] rounded-lg "
             variants={rotateYVariant}
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
           >
-            <FiMail className="text-sm" /> yourname@email.com{" "}
+            <FiMail className="text-base md:text-lg" /> yourname@email.com{" "}
             {/* TODO: Replace with your email */}
           </motion.a>
         </div>
@@ -134,7 +134,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
           className="flex items-center gap-4 py-6"
         >
           <div className="flex-1 h-px bg-[var(--border)] opacity-50" />
-          <p className="text-[var(--muted)] text-xs font-medium whitespace-nowrap">
+          <p className="text-[var(--muted)] text-sm md:text-base font-medium whitespace-nowrap">
             Or send a message
           </p>
           <div className="flex-1 h-px bg-[var(--border)] opacity-50" />
@@ -157,7 +157,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
               id="email"
               aria-describedby="email-error"
               placeholder="Your Email"
-              className="w-full px-4 py-3 border placeholder:text-sm bg-[var(--surface)] border-[var(--border)] rounded-lg focus:outline-none"
+              className="w-full px-4 py-3.5 border text-base md:text-lg placeholder:text-base md:placeholder:text-lg bg-[var(--surface)] border-[var(--border)] rounded-lg focus:outline-none"
               required
             />
             {emailError && (
@@ -181,7 +181,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
               id="message"
               aria-describedby="message-error"
               rows={5}
-              className="w-full px-4 py-3 border placeholder:text-sm bg-[var(--surface)] border-[var(--border)] rounded-lg focus:outline-none resize-none"
+              className="w-full px-4 py-3.5 border text-base md:text-lg placeholder:text-base md:placeholder:text-lg bg-[var(--surface)] border-[var(--border)] rounded-lg focus:outline-none resize-none"
               required
             />
             {messageError && (
@@ -205,7 +205,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
             whileInView="visible"
             viewport={{ once: true }}
             disabled={loading}
-            className={`w-full bg-[var(--card-bg)] px-4 py-2 rounded-lg text-sm font-medium border border-[var(--border)] md:hover:bg-[var(--surface-hover)] flex justify-center ${loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+            className={`w-full bg-[var(--card-bg)] px-4 py-3 rounded-lg text-base md:text-lg font-medium border border-[var(--border)] md:hover:bg-[var(--surface-hover)] flex justify-center ${loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
           >
             {loading ? "Sending..." : "Send Message"}
           </motion.button>
@@ -214,7 +214,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         {status && (
           <p
             aria-live="polite"
-            className="mt-4 text-center text-sm font-medium text-blue-600"
+            className="mt-4 text-center text-base md:text-lg font-medium text-blue-600"
           >
             {status}
           </p>

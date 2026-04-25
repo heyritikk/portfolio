@@ -16,7 +16,7 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         whileInView="visible"
         variants={fadeInDown}
         viewport={{ once: true }}
-        className="text-xs tracking-wide mt-20 md:mt-32 lg:mt-44 mb-8 sm:tracking-wider border border-[var(--border)] rounded-full px-4 py-1.5 flex justify-center items-center gap-2 relative shine"
+        className="text-sm md:text-base tracking-wide mt-20 md:mt-32 lg:mt-44 mb-8 sm:tracking-wider border border-[var(--border)] rounded-full px-5 py-2 flex justify-center items-center gap-2 relative shine"
       >
         Learning. Building. Improving.
       </motion.p>
@@ -26,8 +26,8 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         whileInView="visible"
         variants={fadeInUp}
         viewport={{ once: true }}
-        className="text-[52px] max-[370px]:text-[48px] sm:text-5xl font-medium md:text-[60px] [font-family:var(--font-instrument-serif)]
- leading-14 px-4 sm:leading-18 w-[96%] sm:max-w-2xl md:max-w-[44rem]"
+        className="text-[56px] max-[370px]:text-[52px] sm:text-6xl font-medium md:text-[72px] [font-family:var(--font-instrument-serif)]
+ leading-15 px-4 sm:leading-20 w-[96%] sm:max-w-3xl md:max-w-[52rem]"
       >
         Turning Ideas into Seamless Modern{" "}
         <span className="italic">Web Experiences</span>{" "}
@@ -38,7 +38,7 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         whileInView="visible"
         variants={fadeInUp}
         viewport={{ once: true, amount: 0.2 }}
-        className="text-xl md:text-2xl leading-6 md:leading-8 w-full sm:max-w-2xl px-4 max-[370px]:px-10 md:max-w-3xl text-[var(--muted)]"
+        className="text-2xl md:text-3xl leading-8 md:leading-10 w-full sm:max-w-3xl px-4 max-[370px]:px-10 md:max-w-4xl text-[var(--muted)]"
       >
         Hey, I&apos;m John Doe, a Full Stack Developer{" "}
         {/* TODO: Replace "John Doe" with your name and "Full Stack Developer" with your title */}
@@ -48,10 +48,10 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
         whileInView="visible"
         variants={fadeInUp}
         viewport={{ once: true, amount: 0.2 }}
-        className="flex max-sm:flex-col w-full px-8 justify-center mt-6 gap-4 md:gap-6"
+        className="flex max-sm:flex-col w-full px-8 justify-center mt-8 gap-4 md:gap-6"
       >
         <motion.a
-          className="px-6 flex group items-center justify-center gap-2 py-2 rounded-full border border-[var(--border)] md:text-lg cursor-pointer"
+          className="px-8 flex group items-center justify-center gap-2 py-3 rounded-full border border-[var(--border)] text-lg md:text-xl cursor-pointer"
           whileHover="hover"
           href="https://www.linkedin.com/in/yourprofile/" // TODO: Replace with your LinkedIn URL (or any connect link)
           target="_blank"
@@ -77,7 +77,7 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
             hover: { scale: 1.05 },
           }}
           href="#projects"
-          className="px-6 flex justify-center items-center gap-2 py-2 rounded-full border border-[var(--border)] md:text-lg cursor-pointer"
+          className="px-8 flex justify-center items-center gap-2 py-3 rounded-full border border-[var(--border)] text-lg md:text-xl cursor-pointer"
         >
           View Projects{" "}
           <motion.span
@@ -86,7 +86,7 @@ const Hero = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <FiArrowRight className="md:text-lg" />
+            <FiArrowRight className="text-lg md:text-xl" />
           </motion.span>
         </motion.a>
       </motion.div>

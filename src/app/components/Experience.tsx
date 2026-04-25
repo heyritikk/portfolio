@@ -9,10 +9,10 @@ const Experience = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{once: true}}
-      className="bg-[var(--background)] w-full mx-auto pb-4 border-b border-[var(--border)] max-sm:px-1"
+      className="bg-[var(--background)] w-full mx-auto pb-5 border-b border-[var(--border)] max-sm:px-1"
     >
-      <div className="gap-4 text-sm">
-        <h2 className="text-lg font-medium mb-4">Experience</h2>
+      <div className="gap-4 text-base md:text-lg">
+        <h2 className="text-2xl font-medium mb-4">Experience</h2>
 
         {experiences.map((experience, index) => (
           <div key={index} className="mb-6 last:mb-0">
@@ -32,7 +32,7 @@ const Experience = () => {
             </h3>
 
             <motion.ul
-              className="mt-2 space-y-2 text-sm"
+              className="mt-2 space-y-2 text-base md:text-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}

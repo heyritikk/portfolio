@@ -2,6 +2,8 @@
 import { motion } from "motion/react";
 import { fadeInRight } from "../data/variants";
 import { IoCodeDownloadOutline } from "react-icons/io5";
+import { FiInstagram } from "react-icons/fi";
+import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -10,24 +12,96 @@ const Footer = () => {
       initial="initial"
       whileInView="whileInView"
       viewport={{ once: true }}
-      className="bg-[var(--background)] tracking-wide sm:tracking-wider border-t flex max-md:gap-2 max-md:flex-col-reverse gap-20 justify-center items-center border-[var(--border)] text-[var(--foreground)] text-center text-sm lg:py-6 pb-8 pt-4"
+      className="bg-[var(--background)] border-t border-[var(--border)] text-[var(--foreground)]"
     >
-      <p className="">
-        &copy; {new Date().getFullYear()} Your Name. All rights reserved.{" "}
-        {/* TODO: Replace with your name */}
-      </p>
-      <a
-        href="https://github.com/yourusername" // TODO: Replace with your GitHub repo URL or any link
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center px-4 py-2 gap-1 hover:underline rounded-md transition"
-      >
-        <IoCodeDownloadOutline
-          strokeWidth={2}
-          className="size-5 md:size-[22px]"
-        />
-        Source Code{" "}
-      </a>
+      <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
+        <div className="space-y-5">
+          <a
+            href="/resume.pdf" // TODO: Replace with your actual resume file path
+            className="text-base hover:underline"
+          >
+            Download Resume
+          </a>
+
+          <div className="space-y-3 max-w-md">
+            <h3 className="text-3xl font-semibold">Subscribe to our newsletter</h3>
+            <div className="flex max-sm:flex-col gap-3">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                className="flex-1 rounded-lg border border-[var(--border)] bg-[var(--background)] px-4 py-3 text-base outline-none focus:ring-1 focus:ring-[var(--foreground)]"
+              />
+              <button
+                type="button"
+                className="rounded-lg bg-black text-white px-6 py-3 text-base font-medium hover:opacity-90 transition"
+              >
+                Book a demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:justify-self-end flex flex-col items-start md:items-end gap-5">
+          <div className="flex items-center gap-3">
+            <span className="text-base">Social Media</span>
+            <a
+              href="https://x.com/yourusername" // TODO: Replace with your X profile URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
+            >
+              <FaXTwitter className="size-4" />
+            </a>
+            <a
+              href="https://instagram.com/yourusername" // TODO: Replace with your Instagram URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
+            >
+              <FiInstagram className="size-4" />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername" // TODO: Replace with your LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
+            >
+              <FaLinkedinIn className="size-4" />
+            </a>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="text-2xl font-semibold">Explore</h4>
+            <ul className="text-base space-y-1 text-[var(--muted-foreground)]">
+              <li><a href="#home" className="hover:text-[var(--foreground)]">Home</a></li>
+              <li><a href="#about" className="hover:text-[var(--foreground)]">About</a></li>
+              <li><a href="#projects" className="hover:text-[var(--foreground)]">Projects</a></li>
+              <li><a href="#contact" className="hover:text-[var(--foreground)]">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-[var(--border)]">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex max-md:flex-col gap-3 items-center justify-between text-base">
+          <p>
+            &copy; {new Date().getFullYear()} Your Name. All rights reserved.{" "}
+            {/* TODO: Replace with your name */}
+          </p>
+          <a
+            href="https://github.com/yourusername" // TODO: Replace with your GitHub repo URL or any link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center px-2 py-1 gap-1 hover:underline rounded-md transition"
+          >
+            <IoCodeDownloadOutline
+              strokeWidth={2}
+              className="size-5 md:size-[22px]"
+            />
+            Source Code
+          </a>
+        </div>
+      </div>
     </motion.footer>
   );
 };

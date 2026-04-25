@@ -48,7 +48,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true }}
-          className="text-xs text-center text-[var(--muted)] dark:text-gray-200 font-medium"
+          className="text-sm md:text-base text-center text-[var(--muted)] dark:text-gray-200 font-medium"
         >
           EXPLORE MY CREATIONS
         </motion.p>
@@ -57,7 +57,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl [font-family:var(--font-instrument-serif)] pt-2 sm:pt-4 px-4 pb-1 mb-6 md:mb-10"
+          className="text-5xl md:text-7xl [font-family:var(--font-instrument-serif)] pt-2 sm:pt-4 px-4 pb-1 mb-7 md:mb-12"
         >
           Project{" "}
           <span className="animated-text-gradient italic">Showcase</span>
@@ -68,12 +68,12 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="px-4 lg:w-4xl "
+          className="px-4 lg:w-5xl "
         >
           {projects.map((project, index) => (
             <motion.div
               key={project.name}
-              className="project flex max-lg:flex-col max-lg:pb-4 bg-[var(--card-bg)] gap-4 my-4 shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition sticky border border-[var(--border)] max-md:h-[80svh] max-lg:h-auto"
+              className="project flex max-lg:flex-col max-lg:pb-4 bg-[var(--card-bg)] gap-4 my-5 shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition sticky border border-[var(--border)] max-md:h-[80svh] max-lg:h-auto"
               style={{
                 top: `calc(${isLargeScreen ? "72px" : isMdScreen ? "50px" : "20px"} + ${index * (isMdScreen ? 80 : 50)}px)`,
                 zIndex: index + 1,
@@ -84,16 +84,16 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="projectinfo flex flex-1 flex-col p-4 md:p-8 lg:h-[400px] min-h-0 max-lg:overflow-y-auto"
+                className="projectinfo flex flex-1 flex-col p-5 md:p-9 lg:h-[430px] min-h-0 max-lg:overflow-y-auto"
               >
-                <h3 className="text-2xl md:text-4xl [font-family:var(--font-instrument-serif)] border-b border-[var(--border)] pb-2 font-medium">
+                <h3 className="text-3xl md:text-5xl [font-family:var(--font-instrument-serif)] border-b border-[var(--border)] pb-3 font-medium">
                   {project.name}
                 </h3>
-                <p className="mt-2">{project.description}</p>
+                <p className="mt-3 text-lg md:text-xl">{project.description}</p>
                 <ul>
                   {project.points.map((listItem, index) => (
-                    <li className="text-sm pt-2 flex items-start" key={index}>
-                      <MdOutlineKeyboardArrowRight className="inline-block size-4 mt-0.5 mr-1" />{" "}
+                    <li className="text-base md:text-lg pt-2.5 flex items-start" key={index}>
+                      <MdOutlineKeyboardArrowRight className="inline-block size-5 mt-0.5 mr-1" />{" "}
                       {listItem}
                     </li>
                   ))}
@@ -115,7 +115,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                         }}
                         viewport={{ once: true }}
                         key={i}
-                        className="flex items-center gap-2 text-xs px-3 py-1 rounded-full border border-[var(--border)]"
+                        className="flex items-center gap-2 text-sm md:text-base px-3.5 py-1.5 rounded-full border border-[var(--border)]"
                       >
                         <Icon style={{ color }} /> {tech.name}
                       </motion.span>
@@ -128,13 +128,13 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                   initial="initial"
                   whileInView="whileInView"
                   viewport={{ once: true }}
-                  className="flex gap-4 mt-4"
+                  className="flex gap-4 mt-5"
                 >
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2 rounded-xl flex justify-center items-center gap-2 text-sm border border-[var(--border)] hover:border-none shadow-md dark:hover:bg-[var(--surface-hover)] lg:hover:bg-gray-800 lg:hover:text-white transition-transform duration-100 ease-out hover:scale-105 hover:-translate-y-0.5"
+                    className="px-6 py-2.5 rounded-xl flex justify-center items-center gap-2 text-base border border-[var(--border)] hover:border-none shadow-md dark:hover:bg-[var(--surface-hover)] lg:hover:bg-gray-800 lg:hover:text-white transition-transform duration-100 ease-out hover:scale-105 hover:-translate-y-0.5"
                   >
                     GitHub
                     <FaGithub />
@@ -144,7 +144,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2 rounded-xl flex justify-center items-center gap-2 text-sm border border-[var(--border)] hover:border-none shadow-md lg:hover:bg-blue-600 lg:hover:text-white transition-transform duration-100 ease-out hover:scale-105 hover:-translate-y-0.5"
+                    className="px-6 py-2.5 rounded-xl flex justify-center items-center gap-2 text-base border border-[var(--border)] hover:border-none shadow-md lg:hover:bg-blue-600 lg:hover:text-white transition-transform duration-100 ease-out hover:scale-105 hover:-translate-y-0.5"
                   >
                     Live Site
                     <FiExternalLink />
