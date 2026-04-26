@@ -16,6 +16,7 @@ import {
   SiRedux,
   SiFirebase,
   SiMongodb,
+  SiMicrosoftsqlserver,
 } from "react-icons/si";
 
 import {
@@ -116,59 +117,49 @@ export const navbarData: NavbarItem[] = [
 // ──────────────────────────────────────────────
 export const projects = [
   {
-    name: "E-Commerce Platform", // TODO: Replace with your project name
-    description: "A full-stack online store with cart and payment integration.",
+    name: "AGC On Board Workforce Solutions",
+    description: "A dynamic UAE-based manpower solutions company providing highly trained and project-ready manpower.",
     points: [
-      "User authentication and profile management.",
-      "Product catalog with search and filters.",
-      "Shopping cart and Stripe payment integration.",
+      "Manpower solutions across civil construction, MEP works, and infrastructure development.",
     ],
     techStack: [
-      { name: "React.js", icon: FaReact, color: "#61DAFB" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
-      { name: "Node.js", icon: FaNodeJs, color: "#83CD29" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: ".NET", icon: SiDotnet, color: "#512BD4" },
+      { name: "SQL Server", icon: SiMicrosoftsqlserver, color: "#CC2927" },
+      { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
-    liveLink: "https://your-project-link.vercel.app", // TODO: Replace with your live project URL
-    githubLink: "https://github.com/yourusername/project-repo", // TODO: Replace with your GitHub repo URL
-    image: "/img/projectimage.jfif", // TODO: Replace with your project screenshot (place in /public/img/)
+    liveLink: "https://agcgroupuae.com/",
+    githubLink: "#",
+    image: "/img/agc.png",
   },
   {
-    name: "Real-Time Chat App", // TODO: Replace with your project name
-    description: "A messaging platform with real-time communication.",
+    name: "Planera",
+    description: "A internal budget and expense management platform designed to streamline fiscal tracking for teams.",
     points: [
-      "Real-time messaging with Socket.IO.",
-      "Group chats and direct messages.",
-      "Responsive design for mobile and desktop.",
+      "Real-time expense submission and tracking dashboard.",
     ],
     techStack: [
-      { name: "React.js", icon: FaReact, color: "#61DAFB" },
-      { name: "Redux Toolkit", icon: SiRedux, color: "#764ABC" },
-      { name: "Node.js", icon: FaNodeJs, color: "#83CD29" },
-      { name: "Express.js", icon: SiExpress, color: "var(--foreground)" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: ".NET", icon: SiDotnet, color: "#512BD4" },
+      { name: "SQL Server", icon: SiMicrosoftsqlserver, color: "#CC2927" },
+      { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
-    liveLink: "https://your-project-link.vercel.app", // TODO: Replace with your live project URL
-    githubLink: "https://github.com/yourusername/project-repo", // TODO: Replace with your GitHub repo URL
-    image: "/img/projectimage.jfif", // TODO: Replace with your project screenshot (place in /public/img/)
+    liveLink: "https://planera-six.vercel.app/",
+    githubLink: "#",
+    image: "/img/planera.png",
   },
   {
-    name: "Task Management Dashboard", // TODO: Replace with your project name
-    description: "A productivity app for managing tasks and tracking progress.",
+    name: "Nexorise",
+    description: "An intelligent platform for realistic hiring simulations and performance analytics.",
     points: [
-      "Drag and drop task organization.",
-      "User authentication with Firebase.",
-      "Analytics dashboard with charts.",
+      "Interactive hiring simulations to prepare candidates for real-world interviews.",
     ],
     techStack: [
-      { name: "Next.js", icon: SiNextdotjs, color: "var(--foreground)" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: ".NET", icon: SiDotnet, color: "#512BD4" },
+      { name: "SQL Server", icon: SiMicrosoftsqlserver, color: "#CC2927" },
+      { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
-    liveLink: "https://your-project-link.vercel.app", // TODO: Replace with your live project URL
-    githubLink: "https://github.com/yourusername/project-repo", // TODO: Replace with your GitHub repo URL
-    image: "/img/projectimage.jfif", // TODO: Replace with your project screenshot (place in /public/img/)
+    liveLink: "https://github.com/heyritikk/Nexorise",
+    githubLink: "https://github.com/heyritikk/Nexorise",
+    image: "/img/nexorise.png",
   },
 ];
 // ──────────────────────────────────────────────
