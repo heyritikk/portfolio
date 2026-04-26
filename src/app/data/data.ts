@@ -7,7 +7,7 @@
 // ============================================================
 
 import { FiHome, FiMail } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { TbUserSquare } from "react-icons/tb";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
@@ -89,6 +89,13 @@ export const navbarData: NavbarItem[] = [
     type: "link",
     icon: IoLogoGithub,
     url: "https://github.com/heyritikk/",
+    size: "18px",
+  },
+  {
+    name: "Instagram",
+    type: "link",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/lamrlttlk?igsh=Nzl1N3lhZGZoY3dq",
     size: "18px",
   },
 ];

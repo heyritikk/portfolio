@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { fadeInRight } from "../data/variants";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
@@ -74,6 +74,14 @@ const Footer = () => {
               className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
             >
               <FaLinkedinIn className="size-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/lamrlttlk?igsh=Nzl1N3lhZGZoY3dq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="size-8 rounded-md border border-[var(--border)] grid place-items-center hover:bg-[var(--muted)] transition"
+            >
+              <FaInstagram className="size-4" />
             </a>
           </div>
 
