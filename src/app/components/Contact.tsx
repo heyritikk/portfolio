@@ -206,7 +206,7 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
             disabled={loading}
             className={`w-full bg-[var(--card-bg)] px-4 py-3 rounded-lg text-base md:text-lg font-medium border border-[var(--border)] md:hover:bg-[var(--surface-hover)] flex justify-center ${loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
           >
-            {loading ? "Sending..." : "Send Message"}
+            {loading ? "Sending..." : "Get in Touch"}
           </motion.button>
         </motion.form>
 
