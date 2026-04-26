@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { fadeInUp } from "../data/variants";
-import { FiArrowUpRight, FiInstagram, FiLinkedin, FiGithub, FiDownload } from "react-icons/fi";
+import { FiInstagram, FiLinkedin, FiGithub, FiDownload, FiMail } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -51,19 +51,17 @@ const Footer = () => {
               Download the Ritik Kumar Resume
             </a>
             <div className="space-y-6">
-              <h3 className="text-2xl md:text-3xl font-normal text-[#1a1f36] dark:text-gray-200 tracking-tight">Subscribe to our newsletter</h3>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="w-full sm:w-[380px] rounded-xl border-2 border-gray-200 dark:border-gray-800 bg-[var(--background)] px-6 py-4 text-[1.1rem] text-gray-700 dark:text-gray-300 outline-none focus:ring-1 focus:ring-gray-300 shadow-[0_2px_15px_rgba(0,0,0,0.03)] relative z-20 font-medium"
-                />
-                <button
-                  type="button"
-                  className="inline-flex items-center justify-center gap-3 rounded-xl bg-[#0f172a] dark:bg-gray-100 text-white dark:text-black px-8 py-4 text-[1.1rem] font-bold hover:opacity-90 transition shadow-md whitespace-nowrap relative z-20"
+              <h3 className="text-2xl md:text-4xl font-normal text-[#1a1f36] dark:text-gray-200 tracking-tight leading-tight">
+                Ready to bring your <br />
+                <span className="italic animated-text-gradient font-medium">next big idea</span> to life?
+              </h3>
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                <a
+                  href="mailto:theritik43700@gmail.com"
+                  className="inline-flex items-center justify-center gap-3 rounded-xl bg-[#0f172a] dark:bg-gray-100 text-white dark:text-black px-6 py-3 text-lg font-bold hover:opacity-90 transition shadow-md whitespace-nowrap relative z-20 group"
                 >
-                  Book a demo <FiArrowUpRight className="size-[1.3rem]" />
-                </button>
+                  Let&apos;s talk <FiMail className="size-[1.2rem] group-hover:scale-110 transition-transform" />
+                </a>
               </div>
             </div>
           </div>
