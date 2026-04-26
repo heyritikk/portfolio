@@ -27,8 +27,11 @@ import {
 import {
   SiTypescript,
   SiNextdotjs,
-  SiFramer,
+  SiAngular,
+  SiSpring,
+  SiDotnet,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 import { LuSquareCode } from "react-icons/lu";
 import { IoLogoGithub } from "react-icons/io";
 
@@ -44,10 +47,13 @@ export const skills = [
   { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "ReactJS", icon: FaReact, color: "#61DAFB" },
+  { name: "Angular", icon: SiAngular, color: "#DD0031" },
   { name: "NextJS", icon: SiNextdotjs, color: "var(--foreground)" },
-  { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
   { name: "NodeJS", icon: FaNodeJs, color: "#83CD29" },
   { name: "ExpressJS", icon: SiExpress, color: "var(--foreground)" },
+  { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
+  { name: "ASP.NET Core", icon: SiDotnet, color: "#512BD4" },
+  { name: "REST API", icon: TbApi, color: "#FF6C37" },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "Git", icon: FaGit, color: "#F05032" },
   { name: "GitHub", icon: FaGithub, color: "var(--foreground)" },
@@ -194,9 +200,7 @@ export const experiences = [
     duration: "Dec 2025 - Present",
     location: "Chennai, Tamil Nadu, India · On-site",
     points: [
-      "Working as a Program Analyst Trainee at one of the world's leading IT services companies.",
-      "Developing solutions using C# and SQL in a fast-paced enterprise environment.",
-      "Collaborating with cross-functional teams on software development and business analysis tasks.",
+      "Building enterprise solutions using C# and SQL, collaborating with cross-functional teams on software development tasks.",
     ],
   },
   {
@@ -205,9 +209,7 @@ export const experiences = [
     duration: "Jun 2025 - Nov 2025",
     location: "Bengaluru, Karnataka, India · Remote",
     points: [
-      "Drove growth strategies for Nyra AI, a next-generation AI-powered marketing engine for early-stage founders.",
-      "Designed and executed marketing campaigns to expand user acquisition and brand awareness.",
-      "Collaborated with the product team to align marketing efforts with platform capabilities.",
+      "Drove growth strategies and executed user acquisition campaigns for an AI-powered marketing engine.",
     ],
   },
   {
@@ -216,9 +218,7 @@ export const experiences = [
     duration: "Apr 2025 - Nov 2025",
     location: "Singapore · Remote",
     points: [
-      "Managed digital marketing and community initiatives for Insight Genesis, an AI platform built on Decentralized Personal Insight (DPI).",
-      "Grew and engaged a global Web3 and AI community across multiple online platforms.",
-      "Developed content strategies to communicate complex AI concepts to a broad audience.",
+      "Managed digital marketing and grew a global Web3 community for an AI platform built on DPI.",
     ],
   },
   {
@@ -227,9 +227,7 @@ export const experiences = [
     duration: "Dec 2024 - Apr 2025",
     location: "Vietnam · Remote",
     points: [
-      "Conducted quality assurance and quality control for an on-chain referral recruitment platform connecting blockchain and Web3 talents.",
-      "Managed community operations and engagement for a reward-driven Web3 talent network.",
-      "Tested smart contracts and Web3 tools to ensure platform reliability and user experience.",
+      "Conducted QA/QC and managed community operations for an on-chain Web3 recruitment platform.",
     ],
   },
   {
@@ -238,9 +236,7 @@ export const experiences = [
     duration: "Nov 2024 - May 2025",
     location: "Singapore · Remote",
     points: [
-      "Managed community growth and engagement for the Association Blockchain Asia, supporting blockchain adoption across industries in Asia.",
-      "Organized online events and initiatives to foster collaboration among blockchain professionals.",
-      "Led community marketing efforts and maintained active communication across social channels.",
+      "Managed community growth and led social marketing for a blockchain association across Asia.",
     ],
   },
 ];
