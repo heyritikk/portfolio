@@ -175,7 +175,7 @@ export const personalInfo = {
   pfp: "/img/profilepic.png", // TODO: Replace with your profile picture path
   alt: "Profile Pic",
   summary:
-    "I'm a passionate developer who loves building web applications. I enjoy solving complex problems and creating user-friendly experiences. Always eager to learn new technologies and contribute to exciting projects.", // TODO: Write your own summary
+    "I'm a CS graduate and Program Analyst Trainee at Cognizant, working with C#, SQL, and modern web technologies. I enjoy building full-stack apps and solving real-world problems. Always eager to learn and grow as a developer.",
   location: "Chennai, India", // TODO: Replace with your location
 };
 // ──────────────────────────────────────────────
