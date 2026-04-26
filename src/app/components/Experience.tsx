@@ -18,7 +18,15 @@ const Experience = () => {
           <div key={index} className="mb-6 last:mb-0">
             {experience.companyName !== "Freelance" && (
               <h3 className="flex justify-between items-center">
-                <span className="font-medium">{experience.companyName}</span>
+                <span className="font-medium">
+                  {experience.url ? (
+                    <a href={experience.url} target="_blank" rel="noopener noreferrer" className="hover:text-[#3b82f6] hover:underline transition-colors">
+                      {experience.companyName}
+                    </a>
+                  ) : (
+                    experience.companyName
+                  )}
+                </span>
                 <span>{experience.duration}</span>
               </h3>
             )}

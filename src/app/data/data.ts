@@ -203,6 +203,7 @@ export const education = {
 export const experiences = [
   {
     companyName: "Cognizant",
+    url: "https://careers.cognizant.com/india-en/",
     title: "Program Analyst Trainee",
     duration: "Dec 2025 - Present",
     location: "Chennai, Tamil Nadu, India · On-site",
@@ -212,6 +213,7 @@ export const experiences = [
   },
   {
     companyName: "Nyra AI",
+    url: "https://www.getnyra.ai/",
     title: "Growth and Marketing Intern",
     duration: "Jun 2025 - Nov 2025",
     location: "Bengaluru, Karnataka, India · Remote",
@@ -221,6 +223,7 @@ export const experiences = [
   },
   {
     companyName: "Insight Genesis - IGAi",
+    url: "https://insightgenesis.ai/",
     title: "Digital Marketing and Community Manager",
     duration: "Apr 2025 - Nov 2025",
     location: "Singapore · Remote",
@@ -230,6 +233,7 @@ export const experiences = [
   },
   {
     companyName: "UCTalent",
+    url: "https://uctalent.io/",
     title: "QA/QC & Community Manager",
     duration: "Dec 2024 - Apr 2025",
     location: "Vietnam · Remote",
@@ -239,6 +243,7 @@ export const experiences = [
   },
   {
     companyName: "Association Blockchain Asia (ABA)",
+    url: "https://asiaweb3aiassociation.org/",
     title: "Community Manager",
     duration: "Nov 2024 - May 2025",
     location: "Singapore · Remote",
