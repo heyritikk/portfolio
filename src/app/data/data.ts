@@ -9,14 +9,13 @@
 import { FiHome, FiMail } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { TbUserSquare } from "react-icons/tb";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiExpress,
   SiRedux,
   SiFirebase,
   SiMongodb,
-  SiMicrosoftsqlserver,
 } from "react-icons/si";
 
 import {
@@ -124,7 +123,7 @@ export const projects = [
     ],
     techStack: [
       { name: ".NET", icon: SiDotnet, color: "#512BD4" },
-      { name: "SQL Server", icon: SiMicrosoftsqlserver, color: "#CC2927" },
+      { name: "SQL Server", icon: FaDatabase, color: "#CC2927" },
       { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
     liveLink: "https://agcgroupuae.com/",
@@ -139,7 +138,7 @@ export const projects = [
     ],
     techStack: [
       { name: ".NET", icon: SiDotnet, color: "#512BD4" },
-      { name: "SQL Server", icon: SiMicrosoftsqlserver, color: "#CC2927" },
+      { name: "SQL Server", icon: FaDatabase, color: "#CC2927" },
       { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
     liveLink: "https://planera-six.vercel.app/",
@@ -154,7 +153,7 @@ export const projects = [
     ],
     techStack: [
       { name: ".NET", icon: SiDotnet, color: "#512BD4" },
-      { name: "SQL Server", icon: SiMicrosoftsqlserver, color: "#CC2927" },
+      { name: "SQL Server", icon: FaDatabase, color: "#CC2927" },
       { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
     liveLink: "https://github.com/heyritikk/Nexorise",
