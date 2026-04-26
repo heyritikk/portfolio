@@ -164,7 +164,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                   rel="noopener noreferrer"
                 >
                   <motion.div
-                    className="projectimg lg:absolute lg:top-20 lg:right-[-55%] w-full h-40 sm:h-80 md:h-96 lg:w-[167%] dark:lg:border dark:border-[var(--border)] rounded-xl lg:h-[22rem] hover:cursor-pointer"
+                    className="projectimg lg:absolute lg:top-20 lg:right-[-55%] w-full h-48 sm:h-80 md:h-96 lg:w-[167%] border-2 border-gray-300 dark:border-[#334155] rounded-[1.5rem] lg:h-[22rem] hover:cursor-pointer shadow-2xl bg-zinc-900/5 dark:bg-white/5 p-1"
                     whileHover={isLargeScreen ? { x: -320, y: -55 } : {}}
                     transition={
                       isLargeScreen
@@ -178,7 +178,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       alt={`Screenshot of ${project.name} - ${project.description}`}
                       priority={index === 0}
-                      className="rounded-xl object-contain dark:border"
+                      className="rounded-[1.25rem] object-cover"
                     />
                   </motion.div>
                 </a>
