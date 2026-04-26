@@ -73,7 +73,6 @@ const Footer = () => {
             <ul className="text-[1.15rem] md:text-[1.25rem] space-y-6 text-gray-400 dark:text-gray-500 font-normal tracking-wide">
               <li><a href="#home" className="hover:text-gray-800 dark:hover:text-white transition">Home</a></li>
               <li><a href="#about" className="hover:text-gray-800 dark:hover:text-white transition">About</a></li>
-              <li><a href="#contact" className="hover:text-gray-800 dark:hover:text-white transition">Contact</a></li>
               <li><a href="#projects" className="hover:text-gray-800 dark:hover:text-white transition">Projects</a></li>
               <li><a href="#projects" className="hover:text-gray-800 dark:hover:text-white transition">Blog</a></li>
             </ul>
