@@ -13,8 +13,6 @@ import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiExpress,
-  SiRedux,
-  SiFirebase,
   SiMongodb,
 } from "react-icons/si";
 
