@@ -1,8 +1,9 @@
 "use client";
 
-import React, { RefObject } from "react";
+import React, { RefObject, useState } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { FiMenu, FiX } from "react-icons/fi";
 import ThemeToggle from "./ThemeToggle";
 
 interface HeaderProps {
@@ -14,6 +15,8 @@ type HeaderNavItem =
   | { label: string; href: string; kind: "link" };
 
 const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navLinks: HeaderNavItem[] = sectionRefs
     ? [
         { label: "Home", kind: "scroll", section: "home", href: "/#home" },
@@ -39,6 +42,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
       behavior: "smooth",
       block: "start",
     });
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -74,7 +78,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
           ))}
         </ul>
 
-        <div className="flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Link
             href="/#contact"
@@ -83,7 +87,56 @@ const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
             Contact
           </Link>
         </div>
+
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            aria-label="Toggle mobile menu"
+            className="p-2 rounded-lg border border-[var(--border)]"
+          >
+            {isMobileMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
+          </button>
+        </div>
       </div>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden border-t border-[var(--border)] bg-[var(--background)] px-6 py-4">
+          <ul className="flex flex-col gap-4 text-lg">
+            {navLinks.map((item) => (
+              <li key={item.label}>
+                {item.kind === "scroll" && sectionRefs ? (
+                  <button
+                    type="button"
+                    onClick={() => handleScroll(item.section)}
+                    className="w-full text-left hover:opacity-70 transition"
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block hover:opacity-70 transition"
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="inline-flex bg-black text-white dark:bg-white dark:text-black px-5 py-2 rounded-xl text-base font-medium hover:opacity-90 transition"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </motion.nav>
   );
 };
