@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Instrument_Serif } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
@@ -139,6 +140,7 @@ export default function RootLayout({
           enableSystem={false}
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

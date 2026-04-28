@@ -121,6 +121,7 @@ export const projects = [
     ],
     techStack: [
       { name: ".NET", icon: SiDotnet, color: "#512BD4" },
+      { name: "Angular", icon: SiAngular, color: "#DD0031" },
       { name: "SQL Server", icon: FaDatabase, color: "#CC2927" },
       { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
@@ -136,6 +137,7 @@ export const projects = [
     ],
     techStack: [
       { name: ".NET", icon: SiDotnet, color: "#512BD4" },
+      { name: "Angular", icon: SiAngular, color: "#DD0031" },
       { name: "SQL Server", icon: FaDatabase, color: "#CC2927" },
       { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
@@ -151,6 +153,7 @@ export const projects = [
     ],
     techStack: [
       { name: ".NET", icon: SiDotnet, color: "#512BD4" },
+      { name: "Angular", icon: SiAngular, color: "#DD0031" },
       { name: "SQL Server", icon: FaDatabase, color: "#CC2927" },
       { name: "REST API", icon: TbApi, color: "#007ACC" },
     ],
