@@ -8,19 +8,29 @@ import ThemeToggle from "./ThemeToggle";
 interface HeaderProps {
   sectionRefs?: Record<string, RefObject<HTMLElement | null>>;
 }
+
+type HeaderNavItem =
+  | { label: string; href: string; kind: "scroll"; section: string }
+  | { label: string; href: string; kind: "link" };
+
 const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
-  const navLinks = sectionRefs
+  const navLinks: HeaderNavItem[] = sectionRefs
     ? [
-        { label: "Home", section: "home", href: "/#home" },
-        { label: "About", section: "about", href: "/#about" },
-        { label: "Projects", section: "projects", href: "/#projects" },
-        { label: "Blog", href: "/blog" },
+        { label: "Home", kind: "scroll", section: "home", href: "/#home" },
+        { label: "About", kind: "scroll", section: "about", href: "/#about" },
+        {
+          label: "Projects",
+          kind: "scroll",
+          section: "projects",
+          href: "/#projects",
+        },
+        { label: "Blog", kind: "link", href: "/blog" },
       ]
     : [
-        { label: "Home", href: "/" },
-        { label: "About", href: "/#about" },
-        { label: "Projects", href: "/#projects" },
-        { label: "Blog", href: "/blog" },
+        { label: "Home", kind: "link", href: "/" },
+        { label: "About", kind: "link", href: "/#about" },
+        { label: "Projects", kind: "link", href: "/#projects" },
+        { label: "Blog", kind: "link", href: "/blog" },
       ];
 
   const handleScroll = (section: string) => {
@@ -47,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
         <ul className="hidden md:flex items-center gap-9 text-lg">
           {navLinks.map((item) => (
             <li key={item.label}>
-              {"section" in item && item.section && sectionRefs ? (
+              {item.kind === "scroll" && sectionRefs ? (
                 <button
                   type="button"
                   onClick={() => handleScroll(item.section)}
