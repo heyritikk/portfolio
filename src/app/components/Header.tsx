@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRefs }) => {
         <ul className="hidden md:flex items-center gap-9 text-lg">
           {navLinks.map((item) => (
             <li key={item.label}>
-              {"section" in item && sectionRefs ? (
+              {"section" in item && item.section && sectionRefs ? (
                 <button
                   type="button"
                   onClick={() => handleScroll(item.section)}
