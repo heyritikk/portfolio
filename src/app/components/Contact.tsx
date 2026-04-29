@@ -48,29 +48,22 @@ const Contact = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
       setMessageError("");
     }
 
-    const formData = {
-      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
-      email,
-      message,
-    };
-
     try {
       setLoading(true);
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ email, message, website }),
       });
 
       const result = await response.json();
-      if (result.success) {
+      if (response.ok && result.success) {
         setStatus("Message sent successfully!");
         form.reset();
       } else {
-        setStatus("Error sending message. Please try again.");
+        setStatus(result.message || "Error sending message. Please try again.");
       }
     } catch {
       setStatus("Something went wrong. Please try again.");
