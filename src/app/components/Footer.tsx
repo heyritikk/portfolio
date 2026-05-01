@@ -4,6 +4,8 @@ import { fadeInUp } from "../data/variants";
 import { FiInstagram, FiLinkedin, FiGithub, FiDownload, FiMail } from "react-icons/fi";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <motion.footer
       variants={fadeInUp}
@@ -92,7 +94,7 @@ const Footer = () => {
 
       {/* Copyright Links flow naturally below the cropped graphic */}
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-[0.85rem] md:text-[0.95rem] text-gray-400 dark:text-gray-500 tracking-wide mt-4 md:mt-6 relative z-20">
-        <p>©2025 Ritik Kumar. All rights reserved.</p>
+        <p>©{currentYear} Ritik Kumar. All rights reserved.</p>
         <div className="flex items-center gap-6 mt-6 md:mt-0">
           <a href="#" className="hover:text-gray-800 dark:hover:text-white transition">Terms of Service</a>
           <a href="#" className="hover:text-gray-800 dark:hover:text-white transition">Privacy Policy</a>
