@@ -7,7 +7,7 @@ import { GrLocation } from "react-icons/gr";
 
 const PersonalInfo = () => {
   return (
-    <motion.div className="lg:w-1/3 lg:max-w-3xl text-center flex flex-col items-center gap-5 pt-6 lg:px-8">
+    <motion.div className="lg:w-1/3 lg:max-w-3xl text-center flex flex-col items-center gap-5 pt-6 lg:px-8 lg:sticky lg:top-24 self-start">
       <motion.div
         variants={fadeInUpRight}
         initial="hidden"

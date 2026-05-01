@@ -16,7 +16,7 @@ const AboutMe = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
       viewport={{once: true}}
       id={id}
       ref={ref}
-      className="bg-[var(--background)]  tracking-wide sm:tracking-wider flex flex-col overflow-hidden items-center text-[var(--foreground)] px-4 lg:px-6 md:py-16"
+      className="bg-[var(--background)] tracking-wide sm:tracking-wider flex flex-col items-center text-[var(--foreground)] px-4 lg:px-6 md:py-16"
     >
       <motion.p
         variants={fadeInRight}
@@ -36,7 +36,7 @@ const AboutMe = React.forwardRef<HTMLElement, { id: string }>(({ id }, ref) => {
       >
         About <span className="animated-text-gradient italic">Me</span>
       </motion.h2>
-      <div className="flex max-lg:flex-col max-w-5xl">
+      <div className="flex max-lg:flex-col max-w-5xl lg:items-start">
         <PersonalInfo />
         <motion.div className="lg:w-2/3 py-2 lg:p-8 space-y-6 lg:border-l lg:border-[var(--border)]">
           <Education />
