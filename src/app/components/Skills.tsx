@@ -22,10 +22,10 @@ const Skills = () => {
             key={category.title}
             className="flex flex-col gap-3 rounded-xl border border-[var(--border)] p-4 md:p-5"
           >
-            <h3 className="text-center text-xs md:text-sm uppercase tracking-[0.2em] text-[var(--muted)] font-semibold">
+            <h3 className="text-left text-xs md:text-sm uppercase tracking-[0.2em] text-[var(--muted)] font-semibold">
               {category.title}
             </h3>
-            <div className="flex gap-2 md:gap-2.5 flex-wrap justify-center">
+            <div className="flex gap-2 md:gap-2.5 flex-wrap justify-start">
               {category.items.map((skill) => {
                 const Icon = skill.icon;
                 const color = skill.color;
