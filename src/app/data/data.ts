@@ -31,8 +31,6 @@ import {
   SiPostgresql,
   SiSolidity,
   SiSolana,
-  SiUbuntu,
-  SiKalilinux,
   SiWireshark,
   SiCplusplus,
 } from "react-icons/si";
