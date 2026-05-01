@@ -12,7 +12,6 @@ import { TbUserSquare } from "react-icons/tb";
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiExpress,
   SiMongodb,
 } from "react-icons/si";
 
@@ -30,7 +29,6 @@ import {
   SiDotnet,
   SiPostgresql,
   SiSolidity,
-  SiSolana,
   SiWireshark,
   SiCplusplus,
 } from "react-icons/si";
@@ -54,7 +52,6 @@ export const skills = [
   { name: "Angular", icon: SiAngular, color: "#DD0031" },
   { name: "NextJS", icon: SiNextdotjs, color: "var(--foreground)" },
   { name: "NodeJS", icon: FaNodeJs, color: "#83CD29" },
-  { name: "ExpressJS", icon: SiExpress, color: "var(--foreground)" },
   { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
   { name: "ASP.NET Core", icon: SiDotnet, color: "#512BD4" },
   { name: "REST API", icon: TbApi, color: "#FF6C37" },
@@ -72,9 +69,7 @@ export const skillCategories = [
       { name: "Web3.js", icon: LuSquareCode, color: "#F16822" },
       { name: "Ethers.js", icon: LuSquareCode, color: "#627EEA" },
       { name: "DApps", icon: LuSquareCode, color: "#8B5CF6" },
-      { name: "DeFi Protocols", icon: LuSquareCode, color: "#22C55E" },
       { name: "NFTs", icon: LuSquareCode, color: "#EC4899" },
-      { name: "Solana", icon: SiSolana, color: "#14F195" },
     ],
   },
   {
@@ -88,7 +83,6 @@ export const skillCategories = [
       { name: "React.js", icon: FaReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "var(--foreground)" },
       { name: "NodeJS", icon: FaNodeJs, color: "#83CD29" },
-      { name: "ExpressJS", icon: SiExpress, color: "var(--foreground)" },
       { name: "Angular", icon: SiAngular, color: "#DD0031" },
       { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
       { name: "ASP.NET Core", icon: SiDotnet, color: "#512BD4" },
