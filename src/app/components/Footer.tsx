@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center gap-8 mt-8 md:mt-0">
-            <span className="text-[1.1rem] font-normal text-[#1a1f36] dark:text-gray-300">Social Media</span>
+            <span className="text-[1.1rem] font-normal text-[#1a1f36] dark:text-gray-300">Social Links</span>
             <div className="flex gap-4">
               <a href="https://x.com/rittik_kumarr" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl border-2 border-gray-200 dark:border-gray-800 bg-[var(--background)] hover:bg-gray-50 dark:hover:bg-gray-900 transition shadow-sm drop-shadow-sm text-[#1a1f36] dark:text-gray-300">
                 <span className="font-bold text-[1.2rem] leading-none text-gray-700 dark:text-gray-300">X</span>
