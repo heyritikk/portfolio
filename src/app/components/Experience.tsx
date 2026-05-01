@@ -12,7 +12,9 @@ const Experience = () => {
       className="bg-[var(--background)] w-full mx-auto pb-5 border-b border-[var(--border)] max-sm:px-1"
     >
       <div className="gap-4 text-base md:text-lg">
-        <h2 className="text-2xl font-medium mb-4">Experience</h2>
+        <h2 className="text-2xl font-medium mb-4">
+          <span className="animated-text-gradient">Experience</span>
+        </h2>
 
         {experiences.map((experience, index) => (
           <div key={index} className="mb-6 last:mb-0">

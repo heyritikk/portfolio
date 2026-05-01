@@ -28,10 +28,18 @@ import {
   SiAngular,
   SiSpring,
   SiDotnet,
+  SiPostgresql,
+  SiSolidity,
+  SiSolana,
+  SiUbuntu,
+  SiKalilinux,
+  SiWireshark,
+  SiCplusplus,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { LuSquareCode } from "react-icons/lu";
 import { IoLogoGithub } from "react-icons/io";
+import { FaPython, FaNetworkWired } from "react-icons/fa";
 
 // ──────────────────────────────────────────────
 // SKILLS — Add/remove your tech stack here.
@@ -55,6 +63,71 @@ export const skills = [
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "Git", icon: FaGit, color: "#F05032" },
   { name: "GitHub", icon: FaGithub, color: "var(--foreground)" },
+];
+
+export const skillCategories = [
+  {
+    title: "Blockchain & Web3",
+    items: [
+      { name: "Smart Contracts", icon: SiSolidity, color: "#363636" },
+      { name: "Solidity", icon: SiSolidity, color: "#363636" },
+      { name: "Web3.js", icon: LuSquareCode, color: "#F16822" },
+      { name: "Ethers.js", icon: LuSquareCode, color: "#627EEA" },
+      { name: "DApps", icon: LuSquareCode, color: "#8B5CF6" },
+      { name: "DeFi Protocols", icon: LuSquareCode, color: "#22C55E" },
+      { name: "NFTs", icon: LuSquareCode, color: "#EC4899" },
+      { name: "Solana", icon: SiSolana, color: "#14F195" },
+    ],
+  },
+  {
+    title: "Full Stack Development",
+    items: [
+      { name: "HTML", icon: FaHtml5, color: "#E34F26" },
+      { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
+      { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "React.js", icon: FaReact, color: "#61DAFB" },
+      { name: "Next.js", icon: SiNextdotjs, color: "var(--foreground)" },
+      { name: "NodeJS", icon: FaNodeJs, color: "#83CD29" },
+      { name: "ExpressJS", icon: SiExpress, color: "var(--foreground)" },
+      { name: "Angular", icon: SiAngular, color: "#DD0031" },
+      { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
+      { name: "ASP.NET Core", icon: SiDotnet, color: "#512BD4" },
+      { name: "REST API", icon: TbApi, color: "#FF6C37" },
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+    ],
+  },
+  {
+    title: "Cybersecurity",
+    items: [
+      { name: "Splunk SIEM", icon: LuSquareCode, color: "#65A30D" },
+      { name: "Sysmon", icon: LuSquareCode, color: "#0EA5E9" },
+      { name: "Nmap", icon: FaNetworkWired, color: "#0EA5E9" },
+      { name: "Hydra", icon: LuSquareCode, color: "#A855F7" },
+      { name: "Metasploit", icon: LuSquareCode, color: "#2563EB" },
+      { name: "Mimikatz", icon: LuSquareCode, color: "#F97316" },
+      { name: "Wireshark", icon: SiWireshark, color: "#1679A7" },
+    ],
+  },
+  {
+    title: "DevOps & Tools",
+    items: [
+      { name: "Git", icon: FaGit, color: "#F05032" },
+      { name: "GitHub", icon: FaGithub, color: "var(--foreground)" },
+    ],
+  },
+  {
+    title: "Languages I Know",
+    items: [
+      { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Python", icon: FaPython, color: "#3776AB" },
+      { name: "C++", icon: SiCplusplus, color: "#00599C" },
+      { name: "Solidity", icon: SiSolidity, color: "#363636" },
+    ],
+  },
 ];
 
 // ──────────────────────────────────────────────

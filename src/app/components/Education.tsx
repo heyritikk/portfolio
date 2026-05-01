@@ -15,7 +15,7 @@ const Education = () => {
     >
       <div className="flex flex-col">
         <h3 className="text-2xl font-medium mb-3">
-          Education
+          <span className="animated-text-gradient">Education</span>
         </h3>
         <p className="text-base md:text-lg flex justify-between">
           <span className="font-medium">{education.college}</span>{" "}
