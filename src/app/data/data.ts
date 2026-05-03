@@ -192,7 +192,7 @@ export const projects = [
     ],
     liveLink: "https://agcgroupuae.com/",
     githubLink: "#",
-    image: "/img/agc.png",
+    image: "/img/full-screen.png",
   },
   {
     name: "Planera",

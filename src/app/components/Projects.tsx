@@ -164,7 +164,7 @@ const Projects = React.forwardRef<HTMLElement, { id: string }>(
                   rel="noopener noreferrer"
                 >
                   <motion.div
-                    className="projectimg lg:absolute lg:top-20 lg:right-[-55%] w-full h-48 sm:h-80 md:h-96 lg:w-[167%] border-2 border-gray-300 dark:border-[#334155] rounded-[1.5rem] lg:h-[22rem] hover:cursor-pointer shadow-2xl bg-zinc-900/5 dark:bg-white/5 p-1"
+                    className="relative projectimg lg:absolute lg:top-20 lg:right-[-55%] w-full h-48 sm:h-80 md:h-96 lg:w-[167%] border-2 border-black dark:border-white rounded-[1.5rem] lg:h-[22rem] hover:cursor-pointer shadow-2xl bg-zinc-900/5 dark:bg-white/5 p-1"
                     whileHover={isLargeScreen ? { x: -320, y: -55 } : {}}
                     transition={
                       isLargeScreen
