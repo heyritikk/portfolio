@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    optimizePackageImports: ["react-icons", "motion"],
+    optimizePackageImports: ["motion"],
   },
   headers: async () => [
     {

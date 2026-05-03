@@ -33,14 +33,19 @@ export default function BlogPageClient({
   }, [activeCategory, blogs, featuredPost.slug]);
 
   const renderGradientTitle = (title: string) => {
-    const parts = title.split(/(Google|Antigravity|Planera|Budget)/g);
+    const parts = title.split(
+      /(Google|Antigravity|Planera|Budget|AGC|Company|2\.0)/g,
+    );
 
     return parts.map((part, index) => {
       if (
         part === "Google" ||
         part === "Antigravity" ||
         part === "Planera" ||
-        part === "Budget"
+        part === "Budget" ||
+        part === "AGC" ||
+        part === "Company" ||
+        part === "2.0"
       ) {
         return (
           <span
@@ -80,7 +85,11 @@ export default function BlogPageClient({
 
           <div className="w-full rounded-[28px] overflow-hidden bg-[var(--surface)] border border-black dark:border-white">
             <img
-              src="/img/planera.png"
+              src={
+                featuredPost.cardImage ??
+                featuredPost.coverImage ??
+                "/img/preview.png"
+              }
               alt={featuredPost.imageLabel}
               className="block w-full h-auto rounded-[28px]"
             />

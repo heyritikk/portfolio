@@ -5,7 +5,7 @@ category: Full Stack Project
 author: Ritik Kumar
 imageLabel: Experience it first
 coverImage: /img/planera.png
-featured: true
+featured: false
 heroTitle: Introducing Planera Budget
 ---
 BudgetTrack (Planera Budget) is designed as an internal budget planning and expense management platform for organizations that need strong financial visibility without depending on external accounting or payment systems. The core objective is simple: give employees, managers, and admins a controlled in-app workflow to create budgets, log expenses, review approvals, and generate analytics-backed reports.
