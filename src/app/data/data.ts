@@ -233,7 +233,7 @@ export const personalInfo = {
   pfp: "/img/profilepic.png", // TODO: Replace with your profile picture path
   alt: "Profile Pic",
   summary:
-    "I'm a CS graduate and Program Analyst Trainee at Cognizant, working with C#, SQL, and modern web technologies. I enjoy building full-stack apps and solving real-world problems. Always eager to learn and grow as a developer.",
+    "I'm a CS graduate and a .Net Full Stack Developer at Cognizant, working with C#, SQL, and modern web technologies. I enjoy building full-stack apps and solving real-world problems. Always eager to learn and grow as a developer.",
   location: "Chennai, India", // TODO: Replace with your location
 };
 // ──────────────────────────────────────────────
@@ -255,7 +255,7 @@ export const experiences = [
   {
     companyName: "Cognizant",
     url: "https://careers.cognizant.com/india-en/",
-    title: "Program Analyst Trainee",
+    title: ".Net Full Stack Developer",
     duration: "Dec 2025 - Present",
     location: "Chennai, Tamil Nadu, India · On-site",
     points: [
